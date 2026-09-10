@@ -14,11 +14,11 @@ on:
       download_timeout_ms:
         description: "Timeout (ms) para capturar download por ID"
         required: false
-        default: "8000"
+        default: "2500"
       goto_timeout_ms:
         description: "Timeout (ms) do page.goto por ID"
         required: false
-        default: "12000"
+        default: "8000"
       request_delay_ms:
         description: "Atraso (ms) entre IDs"
         required: false
