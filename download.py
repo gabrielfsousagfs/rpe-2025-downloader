@@ -8,14 +8,14 @@ from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 START_ID = int(os.getenv("START_ID", "0"))
 END_ID = int(os.getenv("END_ID", "499"))
 SAVE_FOLDER = "pdfs_rpe_2024"
-ZIP_NAME = f"RPE_2024_{START_ID}_{END_ID}.zip"
+ZIP_NAME = f"RPE_2025_{START_ID}_{END_ID}.zip"
 
 # Tunables for performance / CI stability
 DOWNLOAD_TIMEOUT_MS = int(os.getenv("DOWNLOAD_TIMEOUT_MS", "8000"))
 GOTO_TIMEOUT_MS = int(os.getenv("GOTO_TIMEOUT_MS", "12000"))
 REQUEST_DELAY_MS = int(os.getenv("REQUEST_DELAY_MS", "100"))
 
-BASE_URL = "https://sistema-registropublicodeemissoesapi.fgv.br/GenerateReport/GenerateInventoryReport/{}/18/true"
+BASE_URL = "https://sistema-registropublicodeemissoesapi.fgv.br/GenerateReport/GenerateInventoryReport/{}/19/true"
 
 os.makedirs(SAVE_FOLDER, exist_ok=True)
 
