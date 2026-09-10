@@ -67,7 +67,7 @@ jobs:
           PY
 
       - name: Run download script
-        timeout-minutes: 45
+        timeout-minutes: 60
         env:
           START_ID: ${{ inputs.start_id }}
           END_ID: ${{ inputs.end_id }}
